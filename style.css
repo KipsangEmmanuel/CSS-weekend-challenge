@@ -376,3 +376,33 @@
     justify-content: center;
     /* padding: 10px; */
 }
+
+/* section6 */
+.section6{
+    display: flex;
+    justify-content: space-between;
+    background-color: #44107A;
+    margin-bottom: 30px;
+    height: 100vh;
+}
+.words{
+    margin-top: 70px;
+    margin-left: 100px;
+    /* margin-right: 100px; */
+}
+
+.words>h2,p{
+    color: white;
+}
+.words>p{
+    margin-top: 50px;
+    font-size: 25px;
+}
+.words>h2{
+    font-size: 40px;
+}
+
+.map{
+    margin-left: 20px;
+    margin-top: 40px;
+}
