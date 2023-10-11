@@ -121,10 +121,11 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* overflow: hidden; */
     height: 50vh;
+    margin-top: 20px;
 }
 /* .card :hover{
-    background-color: rgb(14, 176, 231);
-    color: white;
+    background-color: rgb(239, 241, 242);
+    color: rgb(202, 14, 14);
 } */
 #left-card{
     background-color: rgb(13, 186, 244);
@@ -175,6 +176,7 @@ body{
     border-radius: 10px;
     overflow: hidden;
     height: 50vh;
+    margin-top: 20px;
 }
 
 .left-card2-text{
@@ -484,11 +486,11 @@ padding: 10px 50px;
 
 }
 .input-form{
-    padding: 20px;
+    padding: 5px;
     width: 80%;
     display: flex;
     flex-direction: column;
-    /* margin: 20px; */
+    margin: 20px;
 }
 .type-input{
     padding: 10px;
