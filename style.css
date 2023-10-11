@@ -2,11 +2,19 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: yellow;
+}
+
+.container{
+    background-color: rgb(238, 244, 238);
+}
 .sectionA{
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/hero.png');
-    height: 70vh;
+    height: 80vh;
     background-size: cover;
-    background-position: center;  
+    background-position: center;
+    /* margin-bottom: 100px;   */
 }
 .logo>h2{
     color: antiquewhite;
@@ -14,7 +22,9 @@
 .navigation{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
     /* overflow: hidden; */
     position: sticky;
     top: 0;
@@ -24,9 +34,17 @@
     font-size: 20px;
     
 }
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* background-color: #231557; */
+    /* justify-content: space-between; */
+}
 .nav{
     margin-top: 5px;
 }
+
 .nav > ul {
     display: flex;
     gap: 30px;
@@ -36,7 +54,7 @@
 }
 
 .right-nav>h4{
-    margin-top: 16px;
+    /* margin-top: 16px; */
     font-size: 20px;
     border-radius: 10px;
     padding: 10px;
@@ -91,21 +109,31 @@
 .cards{
     display: flex;
     justify-content: space-around;
-    margin-top: 13px;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    margin-top: -80px;
+    margin-bottom: 30px;
+    /* margin-bottom: 20px; */
 }
 .card {
-    max-width: 300px;
+    width: 300px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 50vh;
 }
+/* .card :hover{
+    background-color: rgb(14, 176, 231);
+    color: white;
+} */
 #left-card{
     background-color: rgb(13, 186, 244);
     color: white;
 }
+/* #left-card :hover{
+    background-color: white;
+    color: rgb(16, 181, 235);
+} */
 .left-card-text{
     color: white;
     font-size: 18px;
@@ -134,14 +162,15 @@
 .cards2{
     display: flex;
     justify-content: space-around;
-    margin-top: 400px;
-    margin-bottom: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+    flex-wrap: wrap;
+    /* margin-top: 400px; */
+    /* margin-bottom: 10px; */
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
     margin-bottom: 30px;
 }
 .card2{
-    max-width: 300px;
+    width: 300px;
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
@@ -171,11 +200,18 @@
 
 }
 /* section3 */
+.section3{
+    width: 100%;
+}
 .cards3{
     display: flex;
-    justify-content: space-around;
-    margin-left: 150px;
-    margin-right: 150px;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin-left: 150px; */
+    /* margin-right: 150px; */
     margin-bottom: 20px;
 }
 .industry{
@@ -191,11 +227,12 @@
     font-size: 21px;
 }
 .card3{
-    max-width: 300px;
+    width: 300px;
     background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
-    height: 50vh;
+    padding: 30px 10px;
+    /* height: 50vh; */
     margin-bottom: 29px;
 }
 
@@ -225,26 +262,36 @@
 .star{
     display: flex;
     /* justify-content: space-between; */
-    /* gap: 10px; */
+    gap: 10px;
 }
 
 /* section 4 */
+.section4{
+    width: 100%;
+}
 .logos{
     display: flex;
-    justify-content: space-between;
-    margin: 100px 150px 100px 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: 100px 0;
+}
+.sub-top{
+padding: 10px 50px;
+    /* background-color: #FF1361; */
 }
 .suscribe{
     background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #eb64db 100%);
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 90px;
+    justify-content: space-between;
+    width: 100%;
+    /* gap: 90px; */
     /* margin: 40px; */
-    padding: 20px;
-    margin-bottom: 150px;
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 20px 10px;
+    /* margin-bottom: 150px; */
+    /* margin-left: 150px; */
+    /* margin-right: 150px; */
     border-radius: 5px;
 }
 .subscribe-para{
@@ -252,9 +299,15 @@
     font-size: 30px;
 }
 .input{
-    padding: 15px 50px;
+    padding: 18px 40px;
+    width: 40%;
     border-radius: 5px;
     border: none;
+
+}
+.sub-btn{
+    display: flex;
+    align-items: center;
 }
 .subscribe-btn{
     padding: 15px;
@@ -284,9 +337,10 @@
     background-color: white;
     width: 280px;
     border: 1px solid rgb(94, 202, 237);
-    height: 70vh;
+    /* height: 70vh; */
     margin-top: 32px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 .free-content{
     margin-left: 15px;
@@ -318,8 +372,8 @@
 .free-btn{
     padding: 15px 60px;
     margin-left: 40px;
-    margin-right: 30px;
-    margin-top: 50px;
+    /* margin-right: 30px; */
+    margin-top: 25px;
     background-color: rgb(22, 176, 227);
     color: white;
     border: none;
@@ -330,7 +384,7 @@
     background-color: rgb(26, 26, 65);
     width: 280px;
     border: 1px solid rgb(94, 202, 237);
-    height: 80vh;
+    /* height: 80vh; */
     border-radius: 5px;
 }
 .standard-content{
@@ -363,8 +417,8 @@
 .standard-btn{
     padding: 15px 60px;
     margin-left: 40px;
-    margin-right: 30px;
     margin-top: 50px;
+    margin-bottom: 10px;
     background-color: rgb(22, 176, 227);
     color: white;
     border: none;
@@ -374,21 +428,25 @@
 .pricing-cards{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     /* padding: 10px; */
 }
 
 /* section6 */
 .section6{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    flex-wrap: wrap;
     background-color: #240643;
+    /* flex-wrap: wrap; */
     margin-bottom: 30px;
-    height: 100vh;
+    height: 80vh;
+    gap: 30px;
 }
 .words{
     margin-top: 70px;
-    margin-left: 100px;
-    /* margin-right: 100px; */
 }
 
 .words>h2,p{
@@ -403,25 +461,21 @@
 }
 
 .map{
-    margin-left: 100px;
-    margin-top: 40px;
+    /* margin-left: 500px; */
+    margin-top: 80px;
 }
 
 /* section7 */
 .section7{
     display: flex;
-    justify-content: space-between;
-    margin-left: 317px;
-    margin-right: 317px;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: -220px;
     margin-bottom: 20px;
 }
 .form{
     background-color: white;
-    width: 500px;
-    height: 70vh;
     margin-bottom: 20px;
-    margin-right: 120px;
 }
 .form>h2{
     text-align: center;
@@ -430,15 +484,24 @@
 
 }
 .input-form{
-    /* margin-top: 10px; */
-    padding: 30px;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
 }
 .type-input{
-    padding: 7px;
+    padding: 10px;
 
 }
+.submit{
+    /* background-color: #eb64db; */
+    display: flex;
+    justify-content: center;
+    
+}
 .type{
-    padding: 15px 50px;
+    padding: 10px;
     font-size: 20px;
     margin-top: 5px;
     border: none;
@@ -449,25 +512,36 @@
     font-size: 18px;
 }
 .submit-button{
-    margin-left: 30px;
-    padding: 10px 120px;
+    padding: 10px;
     color: white;
     background-color: rgb(9, 188, 248);
     font-size: 18px;
     border-radius: 5px;
     border: none;
+    width: 80%;
 }
 
 /* section 8 */
 .section8{
     display: flex;
-    justify-content: space-between;
-    margin: 50px 130px 50px 130px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    /* margin: 50px 130px 50px 130px; */
     background-color: rgb(248, 248, 247);
+}
+.section8>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    /* margin: 39px; */
+    
 }
 .consult{
     margin-top: 20px;
-    margin-left: 30px;
+    /* margin-left: 50px; */
 }
 .consult>p{
     color: gray;
@@ -492,9 +566,8 @@
 .footer{
     display: flex;
     justify-content: space-between;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    margin: 40px 50px;
 }
 .column>p{
     color: gray;
@@ -508,13 +581,54 @@
 .last-section{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
+    flex-wrap: wrap;
+    margin: 0 50px ;
+    
 }
 .last-section>p{
     color: rgb(69, 66, 66);
     font-size: 20px;
 }
 
+@media (max-width: 768px) {
+    .sectionA {
 
+    }
+
+    .section2 {
+    }
+
+    .section3 {
+    }
+
+    .section4 {
+    }
+
+    .section5 {
+    }
+
+    .section6 {
+    }
+
+    .section7 {
+    }
+
+    .section8 {
+    }
+
+    .footer {
+    }
+
+    .last-section {
+    }
+
+    .navigation {
+    }
+
+    .cards {
+    }
+
+    .cards2 {
+    }
+
+}
